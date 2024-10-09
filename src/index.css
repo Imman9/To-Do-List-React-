@@ -1,13 +1,82 @@
-body {
+/* App.css */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  text-align: center;
+}
+
+.navbar {
+  background-color: #282c34;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  color: #61dafb;
+  font-size: 2rem;
+}
+
+.navbar .links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navbar .links a:hover {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+.navbar .links a:active {
+  background-color: #3e4a59;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  min-height: 60vh;
+}
+
+.home h2 {
+  color: #282c34;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+.list-preview {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.list-preview h2 {
+  color: #282c34;
+  font-size: 1.5rem;
+}
+
+.list-preview:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
